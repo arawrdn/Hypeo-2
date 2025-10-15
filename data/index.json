@@ -1,104 +1,101 @@
 {
   "hero": {
-    "title": "New Hot Entries:",
-    "description": "Coins that have just entered the trending list within the last hour",
+    "title": "Spot the Next Crypto Before It Explodes.",
+    "description": "Hypeo is your real-time Crypto Sentiment Dashboard. We cut through the noise to deliver the market's true emotional state and highlight 'New Hot Entries' that have surged in social chatter.",
     "image": "images/hero.jpg",
-    "imageAlt": "Nuxt logo and title on abstract background",
+    "imageAlt": "Crypto Sentiment Dashboard Interface",
     "buttons": [
       {
         "label": "VIEW TODAY'S SENTIMENT",
-        "url": "https://www.netlify.com/"
+        "url": "#sentiment-data"
       }
     ]
   },
   "logos": {
-    "title": "Spot the Next Crypto Before It Explodes.",
+    "title": "Powered by leading Crypto Data & Social Platforms",
     "icons": [
       {
-        "name": "i-simple-icons-gitlab"
+        "name": "coingecko.svg"
       },
       {
-        "name": "i-simple-icons-github"
+        "name": "coinmarketcap.svg"
       },
       {
-        "name": "i-simple-icons-openai"
+        "name": "binance.svg"
       },
       {
-        "name": "i-simple-icons-google"
-      },
-      {
-        "name": "i-simple-icons-netlify"
+        "name": "twitter.svg"
       }
     ]
   },
   "features": {
-    "title": "Why choose Hypeo?",
+    "title": "Why Choose Hypeo?",
     "description": "Hypeo measures global Fear and Greed, giving you the tools to make informed, contrarian trading decisions.",
     "items": [
       {
-        "title": "Bullish / Bearish",
-        "description": "Nuxt.js allows you to build SSR applications with Vue.js, ensuring fast initial page loads and better SEO."
+        "title": "Fear & Greed Index",
+        "description": "Instantly gauge the market's mood (Bullish / Bearish) with a score from 0 to 100, helping you buy when others are fearful."
       },
       {
-        "title": "Static Site Generation",
-        "description": "You can pre-render pages at build time for static websites. This helps with performance and scalability by serving content directly from a CDN."
+        "title": "Live Trend Tracking",
+        "description": "Discover 'New Hot Entries': coins that have just entered the trending list due to a surge in volume or social activity."
       },
       {
-        "title": "Auto-Routing",
-        "description": "Nuxt automatically generates routes based on the file structure inside the pages directory, reducing the need for manual configuration."
+        "title": "Market Dominance Analysis",
+        "description": "Track Bitcoin Dominance (BTC.D) and Total Market Cap to understand the overall health and money flow of the ecosystem."
       },
       {
-        "title": "File-based Configuration",
-        "description": "Nuxt uses a convention-over-configuration approach, allowing you to define configurations easily in nuxt.config.js without much boilerplate."
+        "title": "Social Sentiment Score",
+        "description": "Get a unique score for individual coins based on real-time social media analysis, predicting potential price movement."
       },
       {
-        "title": "Dynamic Imports",
-        "description": "It supports lazy loading of components with dynamic imports to improve performance by splitting the code into smaller chunks."
+        "title": "Interactive Data Feeds",
+        "description": "Data automatically refreshes every few minutes, providing you with the freshest market intelligence without needing to refresh the page."
       },
       {
-        "title": "SEO Friendly",
-        "description": "With SSR, SSG, and automatic meta tag handling, Nuxt.js ensures your application is SEO-friendly."
+        "title": "Contrarian Trading Edge",
+        "description": "Use emotional data, not just price charts, to spot opportunities that the majority of retail traders often miss."
       }
     ]
   },
   "testimonials": {
-    "title": "What Our Users Are Saying",
-    "description": "Hear from our clients about their experiences working with Nuxt and Netlify.",
+    "title": "What Traders Are Saying About Hypeo",
+    "description": "Trusted by hundreds of daily users to gain the emotional edge in the volatile crypto markets.",
     "items": [
       {
-        "quote": "Kim jong un has made me fall in Love again, Boaz Sollosa our projects so much easier and more enjoyable! Its simple and powerful features help us create Gochujjang, responsive websites with Bahlil effort.",
+        "quote": "Hypeo simplifies the noise. The instant sentiment reading is my first check before making any contrarian trade. It's a game-changer for risk management.",
         "author": {
           "name": "Rifallah A.",
-          "title": "Marketing Specialist at Marah-marah Company",
+          "title": "Crypto Analyst & Trader",
           "avatar": "images/person-1.jpg"
         }
       },
       {
-        "quote": "The scalability offered by Netlify and the flexibility of Nuxt have allowed us to expand our site's functionality without worrying about performance issues. This combination is a powerful solution for any growing business.",
+        "quote": "The 'New Hot Entries' section is fantastic. I've spotted several low-cap gems right as the social buzz started. Performance has been flawless on Netlify.",
         "author": {
           "name": "Sarah L.",
-          "title": "CEO at Some Company",
+          "title": "DeFi Investor",
           "avatar": "images/person-2.jpg"
         }
       },
       {
-        "quote": "Switching to Nuxt and Netlify was a game-changer for our development process. The seamless integration between the two platforms allowed us to deploy faster and with fewer headaches.",
+        "quote": "Finally, a dashboard that focuses on emotion! It's clean, fast, and the data is spot-on. It helps me stay calm when the market is in extreme fear or greed.",
         "author": {
           "name": "Mark T.",
-          "title": "Frontend Engineer at Some Company",
+          "title": "Frontend Engineer & Hobby Trader",
           "avatar": "images/person-3.jpg"
         }
       }
     ]
   },
   "cta": {
-    "title": "Start Building with Nuxt & Netlify",
-    "description": "Let your next project be smarter, faster, and effortlessly deployable.",
+    "title": "Stop Trading Emotionally, Start Trading with Hypeo.",
+    "description": "Unlock advanced tools, customized feeds, and real-time alerts. Sign up now!",
     "buttons": [
       {
-        "label": "Get Started Today",
-        "url": "https://www.netlify.com/"
+        "label": "Get Free Access Now",
+        "url": "/signup"
       }
     ]
   }
-} 
+}
