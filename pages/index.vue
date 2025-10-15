@@ -1,6 +1,6 @@
 <script setup>
 import { ref, onMounted } from 'vue';
-import pageData from '../data/index.json' // Path diperbaiki
+import pageData from '../data/index.json'
 
 const page = ref(pageData);
 const trendingCoins = ref([]);
@@ -16,7 +16,6 @@ const fetchTrendingCoins = async () => {
   const URL = 'https://api.coingecko.com/api/v3/search/trending';
   
   try {
-    // Memanggil API dengan key di header untuk stabilitas
     const response = await fetch(URL, {
       headers: {
         'x-cg-demo-api-key': API_KEY
@@ -56,7 +55,7 @@ onMounted(() => {
       <div v-if="isLoading" class="text-center text-gray-500">Loading live market data...</div>
       <div v-else-if="error" class="text-center text-red-500">{{ error }}</div>
       
-      <div v-else class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div v-else class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <div v-for="coin in trendingCoins" :key="coin.item.id" class="p-4 border rounded-lg shadow-sm">
           <div class="flex items-center mb-2">
             <img :src="coin.item.small" :alt="coin.item.name" class="w-6 h-6 mr-3 rounded-full" />
@@ -96,8 +95,17 @@ onMounted(() => {
 .mr-3 { margin-right: 0.75rem; }
 .rounded-full { border-radius: 9999px; }
 .grid { display: grid; }
-.md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.lg\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+.sm\:grid-cols-2 { 
+    @media (min-width: 640px) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+.lg\:grid-cols-4 {
+    @media (min-width: 1024px) {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
 .gap-6 { gap: 1.5rem; }
 .py-12 { padding-top: 3rem; padding-bottom: 3rem; }
 .text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
@@ -112,6 +120,8 @@ onMounted(() => {
 .font-semibold { font-weight: 600; }
 .text-sm { font-size: 0.875rem; line-height: 1.25rem; }
 .text-gray-600 { color: #4b5563; }
+.text-red-500 { color: #ef4444; }
+.text-gray-500 { color: #6b7280; }
 .text-blue-500 { color: #3b82f6; }
 .text-xs { font-size: 0.75rem; line-height: 1rem; }
 .mt-2 { margin-top: 0.5rem; }
