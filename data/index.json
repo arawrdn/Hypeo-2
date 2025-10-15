@@ -15,16 +15,16 @@
     "title": "Powered by leading Crypto Data & Social Platforms",
     "icons": [
       {
-        "name": "coingecko.svg"
+        "url": "images/coingecko.svg"
       },
       {
-        "name": "coinmarketcap.svg"
+        "url": "images/coinmarketcap.svg"
       },
       {
-        "name": "binance.svg"
+        "url": "images/binance.svg"
       },
       {
-        "name": "twitter.svg"
+        "url": "images/twitter.svg"
       }
     ]
   },
