@@ -12,7 +12,7 @@
     ]
   },
   "logos": {
-    "title": "Hypeo measures global Fear and Greed, giving you the tools to make informed, contrarian trading decisions",
+    "title": "Spot the Next Crypto Before It Explodes.",
     "icons": [
       {
         "name": "i-simple-icons-gitlab"
@@ -33,7 +33,7 @@
   },
   "features": {
     "title": "Why choose Nuxt.js?",
-    "description": "Nuxt.js is a powerful framework built on top of Vue.js that provides an excellent developer experience.",
+    "description": "Hypeo measures global Fear and Greed, giving you the tools to make informed, contrarian trading decisions.",
     "items": [
       {
         "title": "Server-Side Rendering",
