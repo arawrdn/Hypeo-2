@@ -23,7 +23,7 @@ function toggleMenu() {
   <Container>
     <header class="relative flex flex-wrap items-center justify-between my-4">
       <NuxtLink to="/" class="flex items-center text-xl font-bold text-zinc-800">
-        <img src="images/hypeo.jpg" alt="Hypeo Logo" class="h-6 mr-2" />
+        <img src="images/hero.jpg" alt="Hypeo Logo" class="h-6 mr-2" />
         Hypeo
       </NuxtLink>
 
