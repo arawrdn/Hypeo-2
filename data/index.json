@@ -1,18 +1,18 @@
 {
   "hero": {
-    "title": "New Hot Entries: Coins that have just entered the trending list within the last hour",
-    "description": "Craft high-performing, SEO-friendly web experiences with the dynamic power of Nuxt.js and the speed of Netlify's global edge network.",
+    "title": "New Hot Entries:",
+    "description": "Coins that have just entered the trending list within the last hour",
     "image": "images/hero.jpg",
     "imageAlt": "Nuxt logo and title on abstract background",
     "buttons": [
       {
-        "label": "Get Started Today",
+        "label": "VIEW TODAY'S SENTIMENT",
         "url": "https://www.netlify.com/"
       }
     ]
   },
   "logos": {
-    "title": "Trusted by the world's best",
+    "title": "Hypeo measures global Fear and Greed, giving you the tools to make informed, contrarian trading decisions",
     "icons": [
       {
         "name": "i-simple-icons-gitlab"
