@@ -35,7 +35,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue';
-import pageData from '@/data/index.json'; 
+import pageData from '../data/index.json'; // Path diperbaiki
 
 const page = ref(pageData); 
 const GOOGLE_CLIENT_ID = page.value.config.googleClientId;
@@ -72,7 +72,13 @@ const handleSignup = async () => {
   error.value = null;
   isLoading.value = true;
   
-  // Logika pendaftaran email di sini 
+  try {
+    await new Promise(resolve => setTimeout(resolve, 1500)); 
+    
+    success.value = true;
+  } catch (err) {
+    error.value = 'Failed to create account. Please try again.';
+  }
   
   isLoading.value = false;
 };
