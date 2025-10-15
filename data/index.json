@@ -32,11 +32,11 @@
     ]
   },
   "features": {
-    "title": "Why choose Nuxt.js?",
+    "title": "Why choose Hypeo?",
     "description": "Hypeo measures global Fear and Greed, giving you the tools to make informed, contrarian trading decisions.",
     "items": [
       {
-        "title": "Server-Side Rendering",
+        "title": "Bullish / Bearish",
         "description": "Nuxt.js allows you to build SSR applications with Vue.js, ensuring fast initial page loads and better SEO."
       },
       {
