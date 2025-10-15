@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 
+// State untuk melacak apakah menu mobile sedang terbuka atau tertutup
 const isMenuOpen = ref(false);
 
 const menuitems = [
@@ -14,6 +15,7 @@ const menuitems = [
   },
 ];
 
+// Fungsi untuk mengubah state (membuka/menutup menu)
 function toggleMenu() {
   isMenuOpen.value = !isMenuOpen.value;
 }
@@ -23,7 +25,11 @@ function toggleMenu() {
   <Container>
     <header class="relative flex flex-wrap items-center justify-between my-4">
       <NuxtLink to="/" class="flex items-center text-xl font-bold text-zinc-800">
-        <img src="images/hero.jpg" alt="Hypeo Logo" class="h-6 mr-2" />
+        <img 
+          src="images/hero.jpg" 
+          alt="Hypeo Logo" 
+          class="h-6 mr-2 object-contain" 
+        />
         Hypeo
       </NuxtLink>
 
@@ -38,7 +44,7 @@ function toggleMenu() {
 
       <nav :class="['w-full md:flex md:items-center md:w-auto', { 'hidden': !isMenuOpen }]" class="mt-4 md:mt-0">
         <ul class="flex flex-col md:flex-row gap-3 text-sm">
-          <li v-for="item of menuitems" class="w-full md:w-auto">
+          <li v-for="item of menuitems" :key="item.title" class="w-full md:w-auto">
             <NuxtLink @click="isMenuOpen = false" :to="item.url" class="flex justify-center px-3 py-2 text-gray-600 border rounded-sm hover:text-gray-800 w-full">
               {{ item.title }}
             </NuxtLink>
