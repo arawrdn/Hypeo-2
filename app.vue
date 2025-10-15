@@ -1,17 +1,27 @@
 <script setup>
 useHead({
   htmlAttrs: { lang: "en-US" },
-  title: "Nuxt Starter",
+  // Judul dan deskripsi diperbarui
+  title: "Hypeo - Crypto Sentiment Dashboard",
   meta: [
     {
       name: "description",
       content:
-        "Nuxt Starter is a minimal template created for quick landing pages, built with Nuxt and Tailwind CSS.",
+        "Hypeo is your real-time dashboard for crypto market sentiment. Track market emotion and discover which hype tokens are making moves.",
     },
   ],
   bodyAttrs: {
     class: 'font-display'
-  }
+  },
+  // --- BAGIAN BARU YANG DITAMBAHKAN ---
+  script: [
+    { 
+      src: 'https://accounts.google.com/gsi/client', 
+      async: true, 
+      defer: true 
+    }
+  ]
+  // ------------------------------------
 });
 </script>
 
