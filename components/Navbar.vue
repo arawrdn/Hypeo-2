@@ -15,7 +15,7 @@ const menuitems = [
   <Container>
     <header class="flex flex-row flex-wrap items-center justify-between my-4 gap-x-6 gap-y-4">
       <NuxtLink to="/" class="flex items-center text-xl font-bold text-zinc-800">
-        <img src="/images/hypeo_logo.svg" alt="Hypeo Logo" class="h-6 mr-2" /> 
+        <img src="/images/hero.jpg" alt="Hypeo Logo" class="h-6 mr-2" /> 
         Hypeo
       </NuxtLink>
       
