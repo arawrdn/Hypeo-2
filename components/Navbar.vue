@@ -2,11 +2,11 @@
 const menuitems = [
   {
     title: "Sign up",
-    url: "/signup", // Diubah ke halaman internal
+    url: "/signup",
   },
   {
     title: "Log in",
-    url: "/login", // Diubah ke halaman internal
+    url: "/login",
   },
 ];
 </script>
@@ -14,11 +14,11 @@ const menuitems = [
 <template>
   <Container>
     <header class="flex flex-row flex-wrap items-center justify-between my-4 gap-x-6 gap-y-4">
-      <div class="flex items-center justify-between">
-        <NuxtLink to="/" class="text-2xl font-bold text-zinc-800">
-          <span class="text-green-500">Hypeo</span>
-        </NuxtLink>
-      </div>
+      <NuxtLink to="/" class="flex items-center text-xl font-bold text-zinc-800">
+        <img src="/images/hypeo_logo.svg" alt="Hypeo Logo" class="h-6 mr-2" /> 
+        Hypeo
+      </NuxtLink>
+      
       <nav class="flex w-auto">
         <ul class="flex flex-row gap-3 text-sm">
           <li v-for="item of menuitems">
