@@ -97,5 +97,9 @@
         "url": "/signup"
       }
     ]
+  },
+  "config": {
+    "googleClientId": "1063663499509-5rgff1pchn0pkbilhq1vupsusqtevi81.apps.googleusercontent.com",
+    "coingeckoApiKey": "CG-u4rK2GE6CtW1o1rYs7QpkZNL"
   }
 }
